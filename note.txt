@@ -1,0 +1,45 @@
+
+Steps for Js
+        Save the data
+        generate the Html
+        make it interactive
+
+
+Data Attribute
+
+Syntax - 
+- is just an Html attribute
+- have to start with "data-"
+        name                value
+eg: data-product-id = ${product.id}
+
+-then give it any name you want
+
+Modules
+it's  abetter way to organize the code
+
+
+this let's the file gets variable out of the other files
+<script type = "module"></script>
+
+ESM Version - version that works with Js Modules
+ESM = EcmaScript Module
+ (EcmaScript(another name for JavaScript) = JavaScript)
+
+Javascript Date
+ // console.log(dayjs());
+const today = dayjs();
+const deliveryDate = today.add(7, "day"); //adding 7 days to the current date
+deliveryDate.format("dddd, MMMM D");
+// console.log(deliveryDate.format("dddd, MMMM D"));
+
+Js Dataset - and shorthand property
+<div class="delivery-option js-delivery-option"
+delivery-product-id ='${matchingProducts.id}"
+data-delivery-option-id ="${deliveryOption.id}">
+const { productId, deliveryOptionId } = element.dataset;
+
+
+Updating the data and 
+regenerating the Html
+= MVC - Model View COntroller
